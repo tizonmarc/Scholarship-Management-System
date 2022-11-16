@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/feedbackbttn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/feedback"
+        android:fontFamily="@font/calibri_regular"
+        android:text="@string/give_us_feedback"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Concern" />
+
+    <TextView
+        android:id="@+id/DONE"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/done_border"
+        android:fontFamily="@font/calibri_regular"
+        android:gravity="center"
+        android:text="@string/done"
+        android:textColor="#2E7D32"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SubmitYourDoc"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/submit_your_document_to_csdl_office_and_please_wait_for_further_announcement_thankyou"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:fontFamily="@font/calibri_regular"
+        android:background="@drawable/submityourdoc"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DONE" />
+
+    <TextView
+        android:id="@+id/Concern"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/submityourdoc"
+        android:fontFamily="@font/calibri_regular"
+        android:gravity="center"
+        android:text="@string/if_you_have_concern_email_us_scma_system_up_phinmaed_com"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubmitYourDoc" />
+
+    <TextView
+        android:id="@+id/Signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="196dp"
+        android:clickable="true"
+        android:fontFamily="@font/calibri_regular"
+        android:onClick="Signout"
+        android:text="@string/sign_out"
+        android:textColor="#1B5E20"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Concern"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

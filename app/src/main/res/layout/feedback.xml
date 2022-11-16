@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/PHINMAScholardesc2"
+        android:layout_width="336dp"
+        android:layout_height="530dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/feedbackk"
+        android:gravity="top|center"
+        android:text="@string/rate_the_system_by_clicking_the_emoji_that_best_capture_your_experience"
+        android:textColor="@color/black"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Feedback"
+        tools:ignore="TextContrastCheck" />
+
+    <com.hsalf.smileyrating.SmileyRating
+        android:id="@+id/smilerating"
+        android:layout_width="336dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="90dp"
+        app:isIndicator="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PHINMAScholardesc2" />
+
+    <TextView
+        android:id="@+id/Feedback"
+        android:layout_width="300dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/top_shape"
+        android:gravity="center"
+        android:text="@string/feedback"
+        android:textColor="#1B5E20"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/signout2"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:fontFamily="@font/calibri_regular"
+        android:onClick="Signout"
+        android:text="@string/sign_out"
+        android:textColor="#1B5E20"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PHINMAScholardesc2"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/submitbtnn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bttnrounded"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smilerating" />
+
+    <EditText
+        android:id="@+id/typefeedback"
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:fontFamily="@font/calibri_regular"
+        android:hint="@string/type_here"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smilerating"
+        tools:ignore="TextContrastCheck"
+        android:importantForAutofill="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
